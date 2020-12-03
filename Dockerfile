@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ## NOTE: This is a default and be overridden by chartpress using the
 ##       chartpress.yaml configuration
-ARG JUPYTERHUB_VERSION=git+https://github.com/lifematics/CS-jupyterhub.git@add_link_to_graphana
+ARG JUPYTERHUB_VERSION=git+https://github.com/lifematics/CS-jupyterhub.git@add_grafana_metrics
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
